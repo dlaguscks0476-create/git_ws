@@ -1,1 +1,0 @@
-print("Lidar Sensor Start")
