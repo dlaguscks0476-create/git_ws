@@ -1,16 +1,56 @@
-# ==========================================
-# EduWing Robotics Standard .gitignore Template
-# ==========================================
-# 1. ROS2 Build Artifacts (ROS2 빌드 생성물 제외)
+# ROS2 / colcon outputs
 build/
 install/
 log/
-# 2. Python Temporary Files (파이썬 임시 파일 제외)
-**/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-# 3. OS & IDE Metadata (운영체제 및 편집기 설정 파일 제외)
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Machine-specific settings and credentials
+.env
+.env.*
+!.env.example
+config/local.*
+config/*.local.*
+*.pem
+*.key
+
+# Large recordings, datasets, model weights, and generated results
+data/raw/
+recordings/
+rosbags/
+runs/
+results/raw/
+*.bag
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+*.pt
+*.pth
+*.onnx
+*.engine
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Operating system and editor files
 .DS_Store
-.vscode/
+Thumbs.db
+Desktop.ini
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
